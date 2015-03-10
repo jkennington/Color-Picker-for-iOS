@@ -206,6 +206,8 @@
     [self updateColorCursor];
     _didLayoutSubview = YES;
     [_initializeQueue setSuspended:!self.isAbleToCreateColorMap];
+    
+    self.colorMapLayer.frame = self.bounds;
 }
 
 - (CGSize)intrinsicContentSize {
