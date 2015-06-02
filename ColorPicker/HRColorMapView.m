@@ -208,6 +208,7 @@
     [_initializeQueue setSuspended:!self.isAbleToCreateColorMap];
     
     self.colorMapLayer.frame = self.bounds;
+    self.colorMapBackgroundLayer.frame = self.bounds;
 }
 
 - (CGSize)intrinsicContentSize {
